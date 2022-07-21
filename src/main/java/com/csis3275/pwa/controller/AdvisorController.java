@@ -23,6 +23,11 @@ public class AdvisorController {
             return advisorRepository.findAll();
     }
 
+//    Get Advisors by rating
+    @GetMapping("/advisors/{rating}")
+    public List<Advisor> getAdvisorsByRating(@PathVariable final String rating) {
+        return advisorRepository.getAdvisorsByRating(rating);
+    }
 
     //    Add Advisors
     @PostMapping("/advisors")
