@@ -17,9 +17,9 @@ public class CustomAdvisorRepositoryImpl implements CustomAdvisorRepository{
     }
 
     public List<Advisor> getAdvisorsByRating(String rating) {
-        return mongoTemplate.find(BasicQuery.query(Criteria.where("avg_rating").gte(rating)), Advisor.class);
+        return mongoTemplate.findAll(Advisor.class);
+//        return mongoTemplate.find(BasicQuery.query(Criteria.where("avg_rating").gte(rating)), Advisor.class);
     }
-
     public void saveAll(final List<Advisor> advisors) {
         mongoTemplate.insertAll(advisors);
     }

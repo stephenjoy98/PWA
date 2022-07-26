@@ -4,11 +4,9 @@ package com.csis3275.pwa.controller;
 import com.csis3275.pwa.model.Advisor;
 import com.csis3275.pwa.repository.AdvisorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -17,21 +15,20 @@ public class AdvisorController {
     @Autowired
     AdvisorRepository advisorRepository;
 
-    //    Get Advisors
-    @GetMapping("/advisors")
+    @GetMapping("/api/advisors")
     public List<Advisor> getAllAdvisors() {
             return advisorRepository.findAll();
     }
 
-//    Get Advisors by rating
-    @GetMapping("/advisors/{rating}")
+    @GetMapping("/api/advisors/rating/{rating}")
     public List<Advisor> getAdvisorsByRating(@PathVariable final String rating) {
         return advisorRepository.getAdvisorsByRating(rating);
     }
 
-    //    Add Advisors
-    @PostMapping("/advisors")
-    public void addAdvisors(@RequestBody final List<Advisor> advisors) {
+
+    @PostMapping("/api/advisors")
+    public void addProducts(@RequestBody final List<Advisor> advisors) {
         advisorRepository.saveAll(advisors);
     }
+
 }

@@ -7,7 +7,9 @@ import java.util.List;
 
 public interface CustomAdvisorRepository {
     List<Advisor> getAllAdvisors();
+
+    void saveAll(final List<Advisor> advisors);
+
     @Query("{avg_rating : { $gte : ?0 }}")
     List<Advisor> getAdvisorsByRating(String rating);
-    void saveAll(final List<Advisor> advisors);
 }
