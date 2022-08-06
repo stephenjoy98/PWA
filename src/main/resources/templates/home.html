@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{default}">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>PWA - Home</title>
+        <link rel="icon" type="image/x-icon" th:href="@{/assets/favicon.ico}" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/02dbe0be72.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <link th:href="@{/css/styles.css}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="#page-top">Providence Wealth Advisory</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
+                    </ul>
+                    <a th:href="@{/signup}">
+                        <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
+                            <span class="d-flex align-items-center">
+                                <i class="fa-solid fa-user-plus fa-xs"></i>
+                                <span class="small" style="margin-left: 10px">Sign Up</span>
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- Mashead header-->
+        <header class="masthead">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <!-- Mashead text and app badges-->
+                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                            <h1 class="display-1 lh-1 mb-3">Its Time to Seek Financial Advice from Experts</h1>
+                            <p class="lead fw-normal text-muted mb-5">Start Seeking Advice From Our Carefully Chosen Experts By Signing Up</p>
+                            <div class="d-flex flex-column flex-lg-row align-items-center">
+                                <a th:href="@{/signup}">
+                                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
+                                        <span class="d-flex align-items-center">
+                                            <i class="fa-solid fa-user-plus fa-xs"></i>
+                                            <span class="small" style="margin-left: 10px">Sign Up</span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Masthead device mockup feature-->
+                        <div class="masthead-device-mockup">
+                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                        <stop class="gradient-start-color" offset="0%"></stop>
+                                        <stop class="gradient-end-color" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
+                            </svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <div class="device-wrapper">
+                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                    <div class="screen bg-white" style="text-align: center;">
+                                        <span class="vertical-middle"></span><img th:src="@{/assets/undraw_business_deal_re_up4u.svg}" alt="Financial Growth" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- App features section-->
+        <section id="features">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
+                        <div class="container-fluid px-5">
+                            <div class="row gx-5">
+                                <div class="col-md-6 mb-5">
+                                    <div class="text-center">
+                                        <span class="pwa-purple"><i class="fa-solid fa-landmark fa-3x"></i></span>
+                                        <h3 class="font-alt" style="margin-top: 50px;">Financial Planning</h3>
+                                        <p class="text-muted mb-0" style="text-align: justify;">Many individuals confuse financial planning with general savings and investing advice. While how to save (and how much!), and where and when to invest those savings, is every bit important, prudent Financial Planning goes much beyond the realm of just saving and investing. The sooner you understand the role of financial planning in meeting your short, medium and long-term financial aspirations, the better you’ll be able to control your financial destiny.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-5">
+                                    <div class="text-center">
+                                        <span class="pwa-purple"><i class="fa-solid fa-hand-holding-dollar fa-3x"></i></span>
+                                        <h3 class="font-alt" style="margin-top: 50px;">Investment Planning</h3>
+                                        <p class="text-muted mb-0" style="text-align: justify;">While many of us don’t realize it, we are constantly engaged in subconscious acts of investment planning. We plan how we can best invest the limited time we have at our disposal. Would the 2-hours we have best be spent visiting a friend at the hospital, or would it be better invested, say, by taking in that ball game? We do some longer-term planning too: Does it pay to invest the effort studying for a degree in Arts, or would we get a better return studying to pass the Bar exam? <br><br> So, why don’t we invest the time planning our investments?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-5 mb-md-0">
+                                    <div class="text-center">
+                                        <span class="pwa-purple"><i class="fa-solid fa-piggy-bank fa-3x"></i></span>
+                                        <h3 class="font-alt" style="margin-top: 50px;">Retirement Planning</h3>
+                                        <p class="text-muted mb-0" style="text-align: justify;">Long before retirement even hits our radars, we’re planning what type of education, skills training and professional designations we’ll acquire. We also spend a lot of time planning which industries are the best place to work in, and which employers to work for. Once employed, we carefully strategize our every career move, so that we progress to the top of the ladder in our respective fields.<br><br>Sadly though, while we focus most of our efforts on all these plans, we often forget to plan for “life after work”!</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-center">
+                                        <span class="pwa-purple"><i class="fa-solid fa-coins fa-3x"></i></span>
+                                        <h3 class="font-alt" style="margin-top: 50px;">Wealth Management</h3>
+                                        <p class="text-muted mb-0" style="text-align: justify;">For some people, financial planning is mainly concerned with how best to go about building a nest egg, and how to make it last through retirement. But for many, there is a desire to ensure their estate delivers benefits beyond their own retirement, and produces a lasting legacy even after they have passed.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-0">
+                        <!-- Features section device mockup-->
+                        <div class="features-device-mockup">
+                            <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                        <stop class="gradient-start-color" offset="0%"></stop>
+                                        <stop class="gradient-end-color" offset="100%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="50"></circle>
+                                </svg><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+                                <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
+                            <div class="device-wrapper">
+                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                    <div class="screen bg-white" style="text-align: center;">
+                                        <span class="vertical-middle"></span><img th:src="@{/assets/undraw_personal_finance_re_ie6k.svg}" alt="Fianacial Growth" width="100%" style="fill: #212529">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Basic features section-->
+        <section class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-12 col-lg-5">
+                        <h2 class="display-4 lh-1 mb-4">Our Mission - One Purpose: </h2>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">to help you transform your goals into reality. It's through this we earn your trust. Your Goals. Our Passion. At Providence Wealth Advisory we are proud to operate as fiduciaries and conduct business as fee only advisors. Find out what that means for you by signing up.</p>
+                    </div>
+                    <div class="col-sm-8 col-md-6">
+                        <div class="px-5 px-sm-0"><img th:src="@{/assets/undraw_futuristic_interface_re_0cm6.svg}" alt="..." /></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to action section-->
+        <section class="cta">
+            <div class="cta-content">
+                <div class="container px-5">
+                    <h2 class="text-white display-1 lh-1 mb-4">
+                        Stop Worrying.
+                        <br />
+                        Start Investing.
+                    </h2>
+                    <a class="btn btn-outline-light py-3 px-4 rounded-pill" th:href="@{/signup}">Sign Up Now!</a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; Providence Wealth Advisory 2022. All Rights Reserved.</div>
+                    <a href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">FAQ</a>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="../static/js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
