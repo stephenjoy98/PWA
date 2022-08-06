@@ -17,10 +17,10 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
             throws IOException, ServletException {
         //set response to OK status
         response.setStatus(HttpServletResponse.SC_OK);
+        response.sendRedirect("/dashboard");
 
 //        for (GrantedAuthority auth : authentication.getAuthorities()) {
-//            if ("USER".equals(auth.getAuthority())) {
-                response.sendRedirect("/home");
+//            if ("ADMIN".equals(auth.getAuthority())) {
 //            }
 //        }
     }
